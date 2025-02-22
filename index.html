@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cruise Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-content">
+        <!-- Top Controls -->
+        <div class="controls">
+          <div class="price-toggle">
+            <span class="text-sm">Per Person</span>
+
+            <label class="switch">
+              <input type="checkbox" id="priceToggle" checked />
+              <span class="slider"></span>
+            </label>
+            <span class="text-sm">Total Price</span>
+          </div>
+          <div class="passenger-select">
+            <span class="text-sm">
+              <img
+                src="/assets/icons8-person-64.png"
+                alt="person"
+                height="18"
+              />
+              Passengers Per Cabin</span
+            >
+            <select id="passengerCount" class="select">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Package Options -->
+        <div class="package-options">
+          <!-- Update the tabs section with tooltips -->
+          <div class="two">
+            <p>Package-Options</p>
+            <div class="tabs fare-tabs">
+              <button class="tab active" data-tab="basic">
+                BASIC FARE
+                <span class="info-icon" data-tooltip="basic-fare">i</span>
+              </button>
+              <button class="tab" data-tab="inclusive">
+                ALL INCLUSIVE
+                <span class="info-icon" data-tooltip="all-inclusive">i</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Add tooltip containers -->
+          <div class="tooltip" id="basic-fare-tooltip">
+            <h3>BASIC FARE</h3>
+            <p>
+              The standard fare includes all the essentials such as
+              accommodation, dining and entertainment as well as gratuities. You
+              can tailor your add-ons later on your cruise planner.
+            </p>
+            <ul>
+              <li>Accommodation</li>
+              <li>Buffet and Main Restaurant Dining</li>
+              <li>Gratuities</li>
+              <li>Essential drinks: Water, Tea, Coffee and Milk</li>
+              <li>A wide range of entertainment</li>
+            </ul>
+          </div>
+
+          <div class="tooltip" id="all-inclusive-tooltip">
+            <h3>All-Inclusive Fare</h3>
+            <p>
+              The all-inclusive fare includes all the essentials such as
+              accommodation, dining and entertainment as well as gratuities plus
+              Premium Extra drinks packages, worth up to £66pp per night
+            </p>
+            <ul>
+              <li>All drinks up to the value of $14 per drink on-board</li>
+              <li>Accommodation</li>
+              <li>Buffet and Main Restaurant Dining</li>
+              <li>A wide range of entertainment</li>
+              <li>Gratuities</li>
+            </ul>
+          </div>
+
+          <div class="two">
+            <p>Flights Included</p>
+            <div class="tabs cruise-tabs">
+              <button class="tab active" data-tab="cruise">CRUISE ONLY</button>
+              <button class="tab" data-tab="fly">FLY CRUISE</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cabin Selection -->
+
+        <!-- Previous HTML remains same, update the cabin cards section -->
+        <div class="cabin-selection">
+          <p>Select Cabins</p>
+          <div class="cabin-list">
+            <a
+              class="inner-link"
+              href="https://www.cruise118.com/onlinebooking/book/msc-cruises-msc-musica-canary-islands-and-madeira-7-nights-UVRZ/cabins/MU20260102LPALPA?sessionCode=ydYMcd0e-RF3N6rK-RNooVFg-0-0&moduleCode=UVRZ&type=DynamicPackage&superCategory=INSIDE&productUrl=https%3A%2F%2Fcruise118.com%2Fcruise%2FMSCMU20260102LPALPA"
+            >
+              <div class="cabin-card" data-per-person="549">
+                <span class="cabin-type">INSIDE</span>
+                <div class="price-info">
+                  <div class="one">
+                    <div class="was-price">WAS £779pp</div>
+                    <div class="from-price">From <span>£549</span>pp</div>
+                  </div>
+                  <div class="monthly">Monthly payments from £75pp</div>
+                  <div class="call-price hidden">CALL</div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="inner-link"
+              href="https://www.cruise118.com/onlinebooking/book/msc-cruises-msc-musica-canary-islands-and-madeira-7-nights-UVRZ/cabins/MU20260102LPALPA?sessionCode=Xj-RwPt-RxwUp79GEIkebLWg-0-0&moduleCode=UVRZ&type=DynamicPackage&superCategory=OUTSIDE&productUrl=https%3A%2F%2Fcruise118.com%2Fcruise%2FMSCMU20260102LPALPA"
+            >
+              <div class="cabin-card" data-per-person="1238">
+                <span class="cabin-type">OUTSIDE</span>
+                <div class="price-info">
+                  <div class="one">
+                    <div class="was-price">WAS £1718pp</div>
+                    <div class="from-price">From <span>£1238</span>pp</div>
+                  </div>
+                  <div class="monthly">Monthly payments from £80pp</div>
+                  <div class="call-price hidden">CALL</div>
+                </div>
+              </div></a
+            >
+            <a
+              class="inner-link"
+              href="https://www.cruise118.com/onlinebooking/book/msc-cruises-msc-musica-canary-islands-and-madeira-7-nights-UVRZ/cabins/MU20260102LPALPA?sessionCode=Xj-RwPt-RxwUp79GEIkebLWg-0-0&moduleCode=UVRZ&type=DynamicPackage&superCategory=BALCONY&productUrl=https%3A%2F%2Fcruise118.com%2Fcruise%2FMSCMU20260102LPALPA"
+            >
+              <div class="cabin-card" data-per-person="1618">
+                <span class="cabin-type">BALCONY</span>
+                <div class="price-info">
+                  <div class="one">
+                    <div class="was-price">WAS £2098pp</div>
+                    <div class="from-price">From <span>£1618</span>pp</div>
+                  </div>
+                  <div class="monthly">Monthly payments from £88pp</div>
+                  <div class="call-price hidden">CALL</div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="inner-link"
+              href="https://www.cruise118.com/onlinebooking/book/msc-cruises-msc-musica-canary-islands-and-madeira-7-nights-UVRZ/cabins/MU20260102LPALPA?sessionCode=Xj-RwPt-RxwUp79GEIkebLWg-0-0&moduleCode=UVRZ&type=DynamicPackage&superCategory=SUITE&productUrl=https%3A%2F%2Fcruise118.com%2Fcruise%2FMSCMU20260102LPALPA"
+            >
+              <div class="cabin-card" data-per-person="2638">
+                <span class="cabin-type">SUITE</span>
+                <div class="price-info">
+                  <div class="one">
+                    <div class="was-price">WAS £3118pp</div>
+                    <div class="from-price">From <span>£2638</span>pp</div>
+                  </div>
+                  <div class="monthly">Monthly payments from £160pp</div>
+                  <div class="call-price hidden">CALL</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer Text -->
+        <div class="footer-text">
+          <p>
+            (Prices correct as of today's date, are updated daily, are subject
+            to change and represent genuine availability at time of update).
+          </p>
+          <p>
+            Cruise only holidays are financially protected by ABTA. Fly cruise
+            holidays are financially protected by MSC Cruises under ATOL number
+            4316.
+          </p>
+          <p>
+            Please <a href="#" class="link">click here</a> to check the
+            essential travel requirements before booking this cruise.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Sidebar -->
+      <div class="sidebar">
+        <div class="info-text">
+          <h5>Want to add a hotel stay or change your flights?</h5>
+          <p>
+            Just call our team of cruise specialists to help build your dream
+            cruise holiday today!
+          </p>
+        </div>
+        <a
+          href="https://www.cruise118.com/onlinebooking/book/msc-cruises-msc-musica-canary-islands-and-madeira-7-nights-UVRZ/passengers/MU20260102LPALPA?moduleCode=UVRZ&type=DynamicPackage&superCategory=INSIDE&productUrl=https%3A%2F%2Fcruise118.com%2Fcruise%2FMSCMU20260102LPALPA&_its=eJxtjkuOgzAUBO_SaxOwwRh8g1lkkwsgf54VJGKihycsonD20bCd2Za61PXGa46wIBPGvh9kJYNuq64PqhpjHCpvVEitMnoIGgJbcYVgwUs5pOkaaczYyWNxOR5qklqPemJKk1Nk2l430Y9eS6Nj9L4dKJhBpy5pBQFXCs_-u8xrhn0jrg83Z1js-35JTLS4HIgvYX1AgCkRMzEs7qU8N1vXf3c1BMLd5UzLV4Q9awQ2Dtc1_ka_mBJOcKP0_9NHYJsLnbpp-s8P1TJaKQ&_gl=1*1371wya*_gcl_au*Mjg4MzQyOTU4LjE3MzkyOTU4ODQ.*_ga*OTI2Nzk3NzUuMTczOTI5NTc5Mw..*_ga_BVZD1R3N4V*MTc0MDE3NzE3MS4yMi4xLjE3NDAxNzc5MzUuNjAuMC4w&_ga=2.181908263.1058342602.1740122939-92679775.1739295793"
+        >
+          <button class="btn btn-blue">
+            <img src="/assets/icons8-cursor-50.png" alt="cursor" width="20px" />
+            <p>
+              <span> CRUISE ONLY </span>
+              <br />
+              VIEW LIVE PRICES & BOOK ONLINE
+            </p>
+          </button></a
+        >
+        <a href="tel:+448082394844">
+          <button class="btn btn-green">
+            <img src="/assets/icons8-call-50.png" alt="cursor" width="20px" />
+            <p>
+              <span> CALL US FREE FOR THE BEST ADVICE AND EXCLUSIVE DEALS </span
+              ><br />
+              0808 239 1907
+            </p>
+          </button>
+        </a>
+        <a
+          href="https://www.cruise118.com/request-a-callback/?productID=MSCMU20260102LPALPA"
+        >
+          <button class="btn btn-green">
+            <img src="/assets/icons8-email-48.png" alt="cursor" width="20px" />
+            <p>
+              <span> REQUEST A QUOTE </span>
+              <br />
+              LET US CONTACT YOU
+            </p>
+          </button>
+        </a>
+
+        <div class="payment-info">
+          <p>
+            Spread the cost of your holiday! Interest Free Monthly payments are
+            based on a
+            <strong> deposit of £100pp, and 7 monthly installments </strong> in
+            accordance with our balance due date.
+          </p>
+          <p>
+            Prices based on 2 people sharing. Cruise only price does not include
+            flights. Fly-cruise price may vary by chosen UK airport.
+          </p>
+        </div>
+
+        <div class="reviews">
+          <span class="reviews-logo"
+            ><img src="/assets/icons8-star-50.png" alt="" width="18px" />
+            REVIEWS.io</span
+          >
+          <div class="stars">
+            <p>
+              <span class="review-count">
+                Read our <strong>15,095</strong> reviews</span
+              >
+            </p>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
