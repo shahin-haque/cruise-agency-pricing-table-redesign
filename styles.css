@@ -128,7 +128,7 @@ input:checked + .slider:before {
 }
 
 .tab {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border: 1px solid #ccc;
   background: white;
   cursor: pointer;
@@ -424,9 +424,27 @@ input:checked + .slider:before {
   }
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 1155px) {
   .controls {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 24rem) {
+  .cabin-selection {
+    font-size: 0.7rem;
+  }
+  .was-price,
+  .from-price {
+    font-size: 0.75rem;
+  }
+  .tab {
+    /* padding: 0.5rem; */
+  }
+}
+
+@media (min-width: 24rem) {
+  .tab {
+    padding: 0.5rem 1rem;
   }
 }
