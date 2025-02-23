@@ -157,8 +157,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const iconRect = icon.getBoundingClientRect();
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    tooltip.style.top = `${iconRect.bottom + scrollTop + 10}px`;
-    tooltip.style.left = `${iconRect.left - 150}px`; // Center the tooltip
+    tooltip.style.top = `${iconRect.bottom + scrollTop + 12}px`;
+    tooltip.style.left = `${iconRect.left - 160}px`; // Center the tooltip
 
     // Show tooltip and overlay
     tooltip.classList.add("show");
